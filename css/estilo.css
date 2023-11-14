@@ -1,0 +1,83 @@
+body{
+	background-color: #0d1a2d;
+	display: flex;
+	justify-content: center;
+}
+
+.content{
+	background-color: #15273f;
+	width: 85%;
+	margin: 3em 0;
+	border-radius: 10px;
+	padding: 1.6em;
+	box-sizing: border-box;
+}
+.content__img{
+	width: 100%;
+	border-radius: 10px;
+}
+.content__text h1{
+	color: #f9ffff;
+	font-weight: bold;
+	font-size: 1.6em;
+	margin: 1em 0;
+}
+
+.content__text p{
+	color: hsl(215, 51%, 70%);
+	font-size: 16px;
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.content__text div{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: .8em;
+	border-bottom: 1px solid hsl(215, 51%, 70%);
+	margin-bottom: 1em;
+}
+
+.text__title1{
+	color: hsl(178, 100%, 50%);
+	background-image: url(../images/icon-ethereum.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 1.2em;
+} 
+
+.text__title2{
+	color: hsl(215, 51%, 70%);
+	background-image: url(../images/icon-clock.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 1.4em;
+}
+
+.content__footer img{
+	border: 1px solid #fff;
+	width: 50px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.content__footer p{
+	color: hsl(215, 51%, 70%);
+	display: inline;
+	margin-left: .7em;
+}
+.content__footer p .nome{
+	color: #f9ffff;
+}
+.content__text h1:hover,
+.content__footer p .nome:hover{
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
+
+@media (min-width: 1200px){
+	.content{
+		width: 35%;
+	}
+}
